@@ -1,0 +1,49 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mz_portal?schema=public
+    depends_on:
+      - db
+    volumes:
+      - ./public/uploads:/app/public/uploads
+    networks:
+      - mz-network
+
+  db:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mz_portal
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mz-network
+
+  studio:
+    build:
+      context: .
+      target: builder
+    command: npx prisma studio --port 5555 --hostname 0.0.0.0 --browser none
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mz_portal?schema=public
+    ports:
+      - "5555:5555"
+    depends_on:
+      - db
+    networks:
+      - mz-network
+    profiles:
+      - tools
+
+networks:
+  mz-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

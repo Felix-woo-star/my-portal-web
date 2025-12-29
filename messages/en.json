@@ -1,0 +1,71 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "board": "Board",
+        "video": "Video",
+        "login": "Login"
+    },
+    "Hero": {
+        "title": "THE FUTURE<br />IS HERE",
+        "subtitle": "Experience the ultimate portal for the MZ generation. Trends, community, and entertainment in one place.",
+        "getStarted": "Get Started",
+        "learnMore": "Learn More"
+    },
+    "Marquee": {
+        "news": "★ BREAKING NEWS: MZ PORTAL LAUNCHED ★",
+        "trending": "TRENDING NOW: NEON AESTHETICS",
+        "community": "JOIN THE COMMUNITY TODAY"
+    },
+    "Portals": {
+        "title": "QUICK PORTALS"
+    },
+    "Board": {
+        "title": "Community Board",
+        "description": "Join the conversation. Discuss the latest trends, memes, and news with the community.",
+        "goToBoard": "Go to Board"
+    },
+    "Video": {
+        "title": "Video Feed",
+        "description": "Watch the hottest clips. From viral shorts to deep dives, it's all here.",
+        "watchMore": "Watch More",
+        "shorts": "Trending Shorts",
+        "recommended": "Recommended for You"
+    },
+    "Auth": {
+        "loginTitle": "Login",
+        "signupTitle": "Sign Up",
+        "username": "Username",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "loginButton": "Login",
+        "signupButton": "Sign Up",
+        "noAccount": "Don't have an account?",
+        "hasAccount": "Already have an account?",
+        "loginLink": "Login",
+        "signupLink": "Sign up",
+        "errorMismatch": "Passwords do not match",
+        "errorGeneric": "An error occurred",
+        "errorInvalid": "Invalid username or password"
+    },
+    "BoardPage": {
+        "title": "Community Board",
+        "newPost": "New Post",
+        "searchPlaceholder": "Search discussions...",
+        "popularTags": "Popular Tags",
+        "premiumTitle": "Premium",
+        "premiumDesc": "Unlock exclusive features and badges.",
+        "upgrade": "Upgrade Now",
+        "noPosts": "No posts yet. Be the first to write one!",
+        "by": "By",
+        "views": "views",
+        "writeTitle": "Write New Post",
+        "titleLabel": "Title",
+        "contentLabel": "Content",
+        "contentPlaceholder": "Write your thoughts...",
+        "cancel": "Cancel",
+        "publish": "Publish Post",
+        "backToBoard": "Back to Board",
+        "deletePost": "Delete Post",
+        "deleteConfirm": "Are you sure you want to delete this post?"
+    }
+}

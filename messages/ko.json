@@ -1,0 +1,71 @@
+{
+    "Navbar": {
+        "home": "홈",
+        "board": "게시판",
+        "video": "비디오",
+        "login": "로그인"
+    },
+    "Hero": {
+        "title": "미래가<br />여기 있다",
+        "subtitle": "MZ세대를 위한 최고의 포털을 경험하세요. 트렌드, 커뮤니티, 엔터테인먼트가 한 곳에.",
+        "getStarted": "시작하기",
+        "learnMore": "더 알아보기"
+    },
+    "Marquee": {
+        "news": "★ 속보: MZ 포털 런칭 ★",
+        "trending": "지금 뜨는 트렌드: 네온 에스테틱",
+        "community": "지금 커뮤니티에 참여하세요"
+    },
+    "Portals": {
+        "title": "빠른 포털"
+    },
+    "Board": {
+        "title": "커뮤니티 게시판",
+        "description": "대화에 참여하세요. 최신 트렌드, 밈, 뉴스를 커뮤니티와 함께 이야기하세요.",
+        "goToBoard": "게시판 가기"
+    },
+    "Video": {
+        "title": "비디오 피드",
+        "description": "가장 핫한 클립을 시청하세요. 바이럴 숏폼부터 심층 분석까지 모두 여기에.",
+        "watchMore": "더 보기",
+        "shorts": "인기 숏폼",
+        "recommended": "추천 영상"
+    },
+    "Auth": {
+        "loginTitle": "로그인",
+        "signupTitle": "회원가입",
+        "username": "아이디",
+        "password": "비밀번호",
+        "confirmPassword": "비밀번호 확인",
+        "loginButton": "로그인",
+        "signupButton": "가입하기",
+        "noAccount": "계정이 없으신가요?",
+        "hasAccount": "이미 계정이 있으신가요?",
+        "loginLink": "로그인",
+        "signupLink": "회원가입",
+        "errorMismatch": "비밀번호가 일치하지 않습니다",
+        "errorGeneric": "오류가 발생했습니다",
+        "errorInvalid": "아이디 또는 비밀번호가 올바르지 않습니다"
+    },
+    "BoardPage": {
+        "title": "커뮤니티 게시판",
+        "newPost": "게시글작성",
+        "searchPlaceholder": "게시글 검색...",
+        "popularTags": "인기 태그",
+        "premiumTitle": "프리미엄",
+        "premiumDesc": "독점 기능과 배지를 잠금 해제하세요.",
+        "upgrade": "지금 업그레이드",
+        "noPosts": "게시글이 없습니다. 첫 번째 글을 작성해보세요!",
+        "by": "작성자",
+        "views": "조회수",
+        "writeTitle": "새 글 작성",
+        "titleLabel": "제목",
+        "contentLabel": "내용",
+        "contentPlaceholder": "내용을 입력하세요...",
+        "cancel": "취소",
+        "publish": "게시하기",
+        "backToBoard": "게시판으로 돌아가기",
+        "deletePost": "게시글 삭제",
+        "deleteConfirm": "정말로 이 게시글을 삭제하시겠습니까?"
+    }
+}

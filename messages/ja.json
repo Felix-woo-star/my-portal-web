@@ -1,0 +1,71 @@
+{
+    "Navbar": {
+        "home": "ホーム",
+        "board": "掲示板",
+        "video": "ビデオ",
+        "login": "ログイン"
+    },
+    "Hero": {
+        "title": "未来は<br />ここにある",
+        "subtitle": "MZ世代のための究極のポータルを体験してください。トレンド、コミュニティ、エンターテイメントがここに。",
+        "getStarted": "始める",
+        "learnMore": "詳細を見る"
+    },
+    "Marquee": {
+        "news": "★ 速報：MZポータルローンチ ★",
+        "trending": "トレンド中：ネオンエステティック",
+        "community": "今すぐコミュニティに参加"
+    },
+    "Portals": {
+        "title": "クイックポータル"
+    },
+    "Board": {
+        "title": "コミュニティ掲示板",
+        "description": "会話に参加しましょう。最新のトレンド、ミーム、ニュースをコミュニティと話し合いましょう。",
+        "goToBoard": "掲示板へ"
+    },
+    "Video": {
+        "title": "ビデオフィード",
+        "description": "最もホットなクリップを視聴しましょう。バイラルショートから深掘りまで、すべてここに。",
+        "watchMore": "もっと見る",
+        "shorts": "トレンドショート",
+        "recommended": "おすすめ動画"
+    },
+    "Auth": {
+        "loginTitle": "ログイン",
+        "signupTitle": "サインアップ",
+        "username": "ユーザー名",
+        "password": "パスワード",
+        "confirmPassword": "パスワード確認",
+        "loginButton": "ログイン",
+        "signupButton": "登録する",
+        "noAccount": "アカウントをお持ちでないですか？",
+        "hasAccount": "すでにアカウントをお持ちですか？",
+        "loginLink": "ログイン",
+        "signupLink": "サインアップ",
+        "errorMismatch": "パスワードが一致しません",
+        "errorGeneric": "エラーが発生しました",
+        "errorInvalid": "ユーザー名またはパスワードが無効です"
+    },
+    "BoardPage": {
+        "title": "コミュニティ掲示板",
+        "newPost": "新規投稿",
+        "searchPlaceholder": "ディスカッションを検索...",
+        "popularTags": "人気のタグ",
+        "premiumTitle": "プレミアム",
+        "premiumDesc": "限定機能とバッジをアンロック。",
+        "upgrade": "今すぐアップグレード",
+        "noPosts": "まだ投稿がありません。最初の投稿を作成しましょう！",
+        "by": "投稿者",
+        "views": "回視聴",
+        "writeTitle": "新しい投稿を作成",
+        "titleLabel": "タイトル",
+        "contentLabel": "内容",
+        "contentPlaceholder": "考えを書いてください...",
+        "cancel": "キャンセル",
+        "publish": "投稿する",
+        "backToBoard": "掲示板に戻る",
+        "deletePost": "投稿を削除",
+        "deleteConfirm": "本当にこの投稿を削除しますか？"
+    }
+}
