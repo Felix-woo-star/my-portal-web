@@ -52,16 +52,31 @@ export function BannerManager() {
     }, []);
 
     const handleAddBanner = async () => {
-        if (!newBanner.title || !newBanner.description) return;
+        if (!newBanner.title || !newBanner.description) {
+            alert("Title and Description are required");
+            return;
+        }
 
-        await fetch('/api/banners', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newBanner),
-        });
+        try {
+            const res = await fetch('/api/banners', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newBanner),
+            });
 
-        setNewBanner({});
-        fetchBanners();
+            if (!res.ok) {
+                const errorData = await res.json();
+                alert(`Failed to add banner: ${errorData.error || res.statusText}`);
+                return;
+            }
+
+            setNewBanner({});
+            fetchBanners();
+            alert("Banner added successfully!");
+        } catch (error) {
+            console.error("Error adding banner:", error);
+            alert("An unexpected error occurred.");
+        }
     };
 
     const handleDeleteBanner = async (id: string) => {
