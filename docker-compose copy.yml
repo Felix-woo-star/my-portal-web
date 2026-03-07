@@ -1,0 +1,72 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mz_portal?schema=public
+    depends_on:
+      db:
+        condition: service_healthy
+      prisma:
+        condition: service_completed_successfully
+    volumes:
+      - ./public/uploads:/app/public/uploads
+    networks:
+      - mz-network
+
+  db:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mz_portal
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mz-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  prisma:
+    build:
+      context: .
+      target: builder
+    command: npx prisma migrate deploy
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mz_portal?schema=public
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - mz-network
+    restart: "no"
+
+  studio:
+    build:
+      context: .
+      target: builder
+    command: npx prisma studio --port 5555 --hostname 0.0.0.0 --browser none
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mz_portal?schema=public
+    ports:
+      - "5555:5555"
+    depends_on:
+      db:
+        condition: service_healthy
+      prisma:
+        condition: service_completed_successfully
+    networks:
+      - mz-network
+
+networks:
+  mz-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
